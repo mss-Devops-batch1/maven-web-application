@@ -8,6 +8,8 @@ echo "Job name is: ${env.JOB_NAME}"
 echo "Node name is: ${env.NODE_NAME}"
 echo"Build number is: ${env.BUILD_NUMBER}"
 
+
+try{
 stage('checkoutcode')
 {
 git branch: 'development', credentialsId: '22384751-4d83-4918-8997-0b8767fa4ef2', url: 'https://github.com/mss-Devops-batch1/maven-web-application.git'
@@ -36,5 +38,13 @@ sshagent(['e4d4f30f-3ae9-4b67-895e-a66a490f3742']) {
 
 }
 */
-
+}catch(e){
+currentBuild.result = "FAILED"
+    throw e
 }
+finally{
+sendslacknotifications('currentBuild.result')
+}
+
+
+}//node closing

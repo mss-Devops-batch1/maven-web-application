@@ -38,7 +38,7 @@ echo"Build number is: ${env.BUILD_NUMBER}"
 
 
 try{
-sendslacknotifications('started')
+sendslacknotifications('STARTED')
 
 stage('checkoutcode')
 {

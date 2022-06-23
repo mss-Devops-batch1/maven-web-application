@@ -1,3 +1,5 @@
+@Library{'sharedlibsmssbatch1'}
+
 node('nodes'){
 
  
@@ -11,7 +13,7 @@ echo"Build number is: ${env.BUILD_NUMBER}"
 
 
 try{
-sendslacknotifications('STARTED')
+sendSlackNotifications('STARTED')
 
 stage('checkoutcode')
 {

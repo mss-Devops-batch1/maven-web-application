@@ -27,6 +27,8 @@ def sendslacknotifications(String buildStatus = 'STARTED') {
 }
 
 node('nodes'){
+ labels 'nodes'
+ 
 
 def mavenHome = tool name: "maven3.8.5"
 

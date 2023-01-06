@@ -5,6 +5,7 @@ node{
     echo "Job Name is: ${env.JOB_NAME}"
     echo "Node name is: ${env.NODE_NAME}"
     echo "Build number is: ${env.BUILD_NUMBER}"
+    echo "Current result is: ${currentBuild.currentResult}
     
     stage('checkoutcode'){
     git branch: 'development', credentialsId: '38b892b9-fecc-496d-b490-24b50274dd52', url: 'https://github.com/mss-Devops-batch1/maven-web-application.git'

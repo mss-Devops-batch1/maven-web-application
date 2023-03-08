@@ -9,8 +9,10 @@
 </head>
 </head>
 <body>
+
 <h1 align="center">Welcome to MithunSoftwareSolutions.Bengaluru,Karnataka </h1>
 <h1 align="center"> MithunSoftwareSolutions- Very Good Training center for DevOps with AWS in Maratha Halli Bangalore India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
+
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
@@ -48,7 +50,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <hr>
 <p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2019 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
+<p align=center><small>Copyrights 2022 by <a href="http://mithuntechnologies.com/">Mithun Technologies,Bengaluru</a> </small></p>
 
 </body>
 </html>
